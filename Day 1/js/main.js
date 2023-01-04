@@ -7,8 +7,16 @@
 // console.log(x);
 // document.write(x);
 
-// var
-var a = 20;
-var b = 15;
-var c = a + b;
-console.log(c);
+// var variable value can be changed
+// var a = 20;
+// var b = 15;
+// var c = a + b;
+// console.log(c);
+// const constant value can't be changed
+
+// Operator
+// operand operator operand
+// 2 + 3
+// + - * / %
+
+
