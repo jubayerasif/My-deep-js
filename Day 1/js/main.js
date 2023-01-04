@@ -12,5 +12,11 @@
 // var b = 15;
 // var c = a + b;
 // console.log(c);
-
 // const constant value can't be changed
+
+// Operator
+// operand operator operand
+// 2 + 3
+// + - * / %
+
+
