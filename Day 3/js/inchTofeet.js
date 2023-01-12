@@ -3,10 +3,10 @@
 // console.log(feet);
 
 function inchTofeet(inch){
-    var feet = inch / 12;
+    const feet = inch / 12;
     return feet;
 }
-var mainfeet = inchTofeet(156);
+const mainfeet = inchTofeet(156);
 console.log(mainfeet);
-var mainfeet2 = inchTofeet(288);
+const mainfeet2 = inchTofeet(288);
 console.log(mainfeet2);
