@@ -1,8 +1,8 @@
 let lang = "JavaScript";
 
 if(lang.length > 4){
-    console.log("Java");
+    lang = "React"
 }
-
+console.log(lang);
 const country = "India";
 console.log(country);
