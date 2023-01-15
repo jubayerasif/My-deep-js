@@ -36,7 +36,8 @@ function evenify_all(nums){
 
 
 let nums = [5, 12, 89, 45, 18, 8];
-evenify_all(nums);
+let nums_even = evenify_all(nums);
+console.log(nums_even);
 
 let friends_age = [13, 17, 19, 20, 18];
 // evenify_all(friends_age)
