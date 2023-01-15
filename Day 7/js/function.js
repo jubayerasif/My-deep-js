@@ -33,8 +33,6 @@ function evenify_all(nums){
     return even_array;
 }
 
-
-
 let nums = [5, 12, 89, 45, 18, 8];
 let nums_even = evenify_all(nums);
 console.log(nums_even);
