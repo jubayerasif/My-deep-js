@@ -1,0 +1,10 @@
+article{
+    border: 2px solid rgb(215, 115, 98);
+    border-radius: 7.5px;
+    margin: 5px;
+    padding: 2.5px;
+    -webkit-border-radius: 7.5px;
+    -moz-border-radius: 7.5px;
+    -ms-border-radius: 7.5px;
+    -o-border-radius: 7.5px;
+}
