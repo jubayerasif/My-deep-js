@@ -17,23 +17,3 @@ explainCallback('Asifur Hasan', 17, studyHard);
 explainCallback('Taskin Hasan', 17, takeBreak);
 explainCallback('Sakib AL Hasan', 17, playTime);
 
-
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
