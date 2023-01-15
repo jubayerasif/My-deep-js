@@ -1,1 +1,1 @@
-# learning-deep-js
+# Learning-Deep-JS
