@@ -22,7 +22,7 @@ document.getElementById('first').addEventListener('click', function(event){
 document.getElementById('mylist').addEventListener('click', function(event){
     console.log('Ul clicked');
 });
-document.getElementsById('container').addEventListener('click', function(event){
+document.getElementById('container').addEventListener('click', function(event){
     console.log('Container clicked');
 });
 
