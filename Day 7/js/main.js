@@ -7,9 +7,11 @@
 // // secondButton.onclick = handleClick;
 // // secondButton.addEventListener('click', handleClick)
 
-const lastButton = document.getElementById('last').addEventListener('click', function(){
-    document.body.style.backgroundColor = 'Yellow';
-})
+// const lastButton = document.getElementById('last').addEventListener('click', function(){
+//     document.body.style.backgroundColor = 'Yellow';
+// })
+
+
 
 
 
