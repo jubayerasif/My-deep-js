@@ -11,6 +11,17 @@
 //     document.body.style.backgroundColor = 'Yellow';
 // })
 
+// cont firstParagraph = document.getElementById('first').addEventListenet('click', function(){
+//     document.body.style.Color = 'Red';
+//     console.log('item');
+// })
+
+document.getElementById('first').addEventListener('click', function(event){
+    console.log('first item clicked');
+});
+document.getElementsByClassName('container').addEventListener('click', function(event){
+    console.log('first item clicked');
+});
 
 
 
