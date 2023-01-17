@@ -52,12 +52,3 @@ document.getElementById('mylist').addEventListener('click', function(event){
     event.target.parentNode.removeChild(event.target);
 });
 
-
-
-
-
-
-
-
-
-
