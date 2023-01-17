@@ -28,13 +28,25 @@
 // });
 
 
-let items = document.getElementsByClassName('Item');
+let items = document.getElementsByClassName('item');
 for(let i = 0; i < items.length; i++){
     let item = items[i];
+    // console.log(item);
     item.addEventListener('click', function(event){
-        console.log(this)
+        // console.log(this)
+        // console.log(event.target.innerText);
+        event.target.parentNode.removeChild(event.target);
+
     });
 }
+
+document.getElementById('addNew').addEventListener('click', function(event){
+    let itemParent = document.getElementById('mylist');
+    let newItem = document.createElement('li');
+    newItem.innerText= 'Brand New Item';
+    itemParent.appendChild(newItem);
+})
+
 
 
 
