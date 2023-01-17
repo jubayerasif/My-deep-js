@@ -16,19 +16,25 @@
 //     console.log('item');
 // })
 
-document.getElementById('first').addEventListener('click', function(event){
-    console.log('first item clicked');
-    event.stopPropagation();
-});
-document.getElementById('mylist').addEventListener('click', function(event){
-    console.log('Ul clicked');
-});
-document.getElementById('container').addEventListener('click', function(event){
-    console.log('Container clicked');
-});
+// document.getElementById('first').addEventListener('click', function(event){
+//     console.log('first item clicked');
+//     event.stopPropagation();
+// });
+// document.getElementById('mylist').addEventListener('click', function(event){
+//     console.log('Ul clicked');
+// });
+// document.getElementById('container').addEventListener('click', function(event){
+//     console.log('Container clicked');
+// });
 
 
-
+let items = document.getElementsByClassName('Item');
+for(let i = 0; i < items.length; i++){
+    let item = items[i];
+    item.addEventListener('click', function(event){
+        console.log(this)
+    });
+}
 
 
 
