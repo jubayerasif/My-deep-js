@@ -1,11 +1,12 @@
 body
 {
-	background: #fff;
+	background: #E5E4E2;
 }
 .cart
 {
-	margin: 100px 0;
-	background-color: #F6F5FA;;
+	margin: 75px 0;
+	margin-top: 5px;
+	background-color: #F6F5FA;
 	padding: 60px 0;
 }
 .total-price
@@ -59,7 +60,7 @@ body
 {
 	text-align: right;
 }
-.check-out
+.col-md-12 > .check-out
 {
     float: right;
     padding: 10px 30px;
