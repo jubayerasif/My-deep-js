@@ -13,5 +13,5 @@ const totalS = [108, 85, 45];
 
 const maximum = Math.max(ceo, manager, stuff);
 const maximum2 = Math.max(...totalS);
-console.log(maximum);
+console.log(maximum); 
 console.log(maximum2);
