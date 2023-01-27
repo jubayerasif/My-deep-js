@@ -8,7 +8,7 @@ const normalPerson = {
   chargeBill: function (amount) {
     console.log(this);
     this.salary = this.salary - amount;
-    // return this.salary;
+    return this.salary;
   }
 };
 // normalPerson.chargeBill(1500);
