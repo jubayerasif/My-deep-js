@@ -15,17 +15,18 @@ const normalPerson = {
 // normalPerson.chargeBill(3500);
 // console.log(normalPerson.salary);
 
-const heroPerson = {
-  firstName: "Hero",
-  lastName: "Jerry",
-  salary: 45000,
-};
+// const heroPerson = {
+//   firstName: "Hero",
+//   lastName: "Jerry",
+//   salary: 45000,
+// };
 // normalPerson.chargeBill();
 
-const heroChargeBill = normalPerson.chargeBill.bind(heroPerson);
-heroChargeBill(3000);
-heroChargeBill(7000);
-console.log(heroPerson.salary);
+// const heroChargeBill = normalPerson.chargeBill.bind(heroPerson);
+// heroChargeBill(3000);
+// heroChargeBill(7000);
+// console.log(heroPerson.salary);
 
 // const friendlyChargeBill = normalPerson.chargeBill.bind(friendlyPerson);
 // friendlyChargeBill(5000);
+
