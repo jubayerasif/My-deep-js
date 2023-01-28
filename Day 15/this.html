@@ -1,12 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-    
+    <h1>This isn't confused Anymore</h1>
+    <p>THis is a paragraph</p>
+
+    <script>
+        const myObj = {
+            name: 'Bruce Wayne',
+            getFullName: function () {
+                console.log(this);
+                return 'Mr.' + this.name;
+            }
+        }
+        // myObj.getFullName()
+
+        const anotherObj = {
+            name: 'Clerk Kent'
+        }
+        // anotherObj.getFullName = myObj.getFullName;
+        // console.log(anotherObj.getFullName);
+        // myObj.getFullName()
+        // anotherObj.getFullName()
+
+        function add(a, b) {
+            console.log(this);
+            return a + b;
+        }
+        add(12, 28)
+    </script>
 </body>
+
 </html>
