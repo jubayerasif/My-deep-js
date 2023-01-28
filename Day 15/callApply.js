@@ -19,8 +19,6 @@ const heroPerson = {
 };
 // normalPerson.chargeBill();
 
-
-
 // normalPerson.chargeBill.call(heroPerson, 900, 100, 10);
 // normalPerson.chargeBill.call(heroPerson, 100, 300, 30);
 // console.log(heroPerson.salary);
