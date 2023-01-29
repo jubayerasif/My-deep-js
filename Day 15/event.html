@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        <li>list Number 1</li>
+        <li>list Number 2</li>
+        <li>list Number 3</li>
+        <li>list Number 4</li>
+        <li onclick="itemClickHandler(event)">list Number 5</li>
+        <li id="lastList">list Number 6</li>
+    </ul>
+
+    <script>
+        function itemClickHandler(event){
+            console.log(event.target.innerHTML);
+        }
+
+
+        document.getElementById('lastList').addEventListener('click', itemClickHandler);
+    </script>
+</body>
+</html>
