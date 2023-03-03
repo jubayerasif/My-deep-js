@@ -8,14 +8,25 @@
 </head>
 <body>
     
-    <h3>Name</h3>
+    <h3 id="userName">Name</h3>
 
     <script>
-        fetch('https://randomuser.me/api')
-        .then(res => res.json())
-        .then(data => {
-            console.log(data);
-        })
+        function userName(){
+            fetch('https://randomuser.me/api')
+                .then(res => res.json())
+                .then(data => {
+                    const user = data.results[0];
+                    const name  = user.name;
+                    const userName = `${name.title} ${name.first} ${name.last} `;
+                    // console.log(userName);
+                    document.getElementById('userName').innerText = userName;
+                })
+        }
+        userName();
+        setInterval(() =>{
+            userName()
+        }, 2000);
+        
     </script>
 </body>
 </html>
