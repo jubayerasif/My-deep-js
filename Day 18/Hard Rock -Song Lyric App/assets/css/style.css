@@ -1,0 +1,33 @@
+body{
+    background: url(../images/bg-image.jpg)no-repeat;
+    background-size: cover;
+    height: 100vh;
+    background-color: #AB116F;
+    color: #ffffff;
+}
+.form-control{
+    background-color:rgba(255, 255, 255, 0.2);
+    padding: 22px;
+    border: none;
+    border-radius: 25px;
+}
+.btn{
+    border-radius: 1.5rem;
+    padding: 9px 20px;
+}
+.navbar-toggler {
+    border: none;
+}
+.search-box{
+    position: relative;
+}
+.search-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+}
+.single-result{
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+}
