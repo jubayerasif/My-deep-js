@@ -4,6 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .user {
+            color: #fff;
+            background-color: rgb(215, 140, 9);
+            border-radius: 10px;
+            margin: 10px;
+            padding: 20px;
+            box-shadow: 5px 5px 10px gray;
+        }
+    </style>
     <title>Template, dynamically create HTML elements based on data</title>
 </head>
 <body>
@@ -32,23 +42,23 @@
     </div>
 
     <script>
-        fetch ("https://jsonplaceholder.typicode.com/users")
+        fetch("https://jsonplaceholder.typicode.com/users")
             .then(res => res.json())
             .then(data => showUserNames(data));
 
-            function showUserNames(data){
-                let userHTML = '';
-                data.forEach(user => {
-                    userHTML+= `<div>
+        function showUserNames(data) {
+            let userHTML = '';
+            data.forEach(user => {
+                userHTML += `<div class="user">
                                 <h2>Name: ${user.name} </h2>
                                 <p>Email: ${user.email}</p>
                                 <p>${user.company.name} ${user.company.catchPhrase} </p>
                             </div>`
-                });
-                // console.log(lists);
-                const userContainer = document.getElementById('user-container');
-                userContainer.innerHTML = userHTML;
-            }
+            });
+            // console.log(lists);
+            const userContainer = document.getElementById('user-container');
+            userContainer.innerHTML = userHTML;
+        }
     </script>
 </body>
 </html>
