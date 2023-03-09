@@ -37,16 +37,17 @@
             .then(data => showUserNames(data));
 
             function showUserNames(data){
-                let lists = '';
+                let userHTML = '';
                 data.forEach(user => {
-                    lists+= `<div>
+                    userHTML+= `<div>
                                 <h2>Name: ${user.name} </h2>
                                 <p>Email: ${user.email}</p>
+                                <p>${user.company.name} ${user.company.catchPhrase} </p>
                             </div>`
                 });
                 // console.log(lists);
-                const ul = document.getElementById('user-container');
-                ul.innerHTML = lists;
+                const userContainer = document.getElementById('user-container');
+                userContainer.innerHTML = userHTML;
             }
     </script>
 </body>
