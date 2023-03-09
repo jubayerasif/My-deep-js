@@ -7,7 +7,7 @@
     <title>Template, dynamically create HTML elements based on data</title>
 </head>
 <body>
-    <div>
+    <!-- <div>
         <ul id="user-list">
 
         </ul>
@@ -19,7 +19,34 @@
             .then(data => showUserNames(data));
 
             function showUserNames(data){
-                console.log(data);
+                let lists = '';
+                data.forEach(user => {
+                    lists+= `<li>${user.name} : ${user.email}</li>`
+                });
+                console.log(lists);
+                const ul = document.getElementById('user-list');
+                ul.innerHTML = lists;
+            }
+    </script> -->
+    <div id="user-container">
+    </div>
+
+    <script>
+        fetch ("https://jsonplaceholder.typicode.com/users")
+            .then(res => res.json())
+            .then(data => showUserNames(data));
+
+            function showUserNames(data){
+                let lists = '';
+                data.forEach(user => {
+                    lists+= `<div>
+                                <h2>Name: ${user.name} </h2>
+                                <p>Email: ${user.email}</p>
+                            </div>`
+                });
+                // console.log(lists);
+                const ul = document.getElementById('user-container');
+                ul.innerHTML = lists;
             }
     </script>
 </body>
