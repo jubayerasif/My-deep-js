@@ -14,7 +14,7 @@ function App() {
   };
   let style2 = {
     marginTop: "-15px",
-    marginBottom: "-25px"
+    marginBottom: "-25px",
   };
   return (
     <div className="App">
@@ -37,9 +37,27 @@ function App() {
           Job: {person.job}
         </h1>
         {/* <p>My first React Paragraph</p> */}
+        <Person></Person>
+        <Person></Person>
+        <Person></Person>
       </header>
     </div>
   );
-};
+}
+
+function Person() {
+  const style = {
+    marginTop: "-5px",
+    marginBottom: "25px",
+    border: "2px solid red",
+    borderRadius: "15px",
+  };
+  return (
+    <div style={style}>
+      <h4>Name: Sakib Al Hasan</h4>
+      <h3>Hero of the year</h3>
+    </div>
+  );
+}
 
 export default App;
