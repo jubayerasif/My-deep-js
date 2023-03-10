@@ -16,6 +16,7 @@ function App() {
     marginTop: "-15px",
     marginBottom: "-25px",
   };
+  const personName= ['Sakib Al Hasan', 'Samim Hasan', 'Hasif Khan']
   return (
     <div className="App">
       <header className="App-header">
@@ -37,15 +38,18 @@ function App() {
           Job: {person.job}
         </h1>
         {/* <p>My first React Paragraph</p> */}
-        <Person></Person>
-        <Person></Person>
-        <Person></Person>
+        {/* <Person name="Sakib Al Hasan" address = "Chittagong"></Person>
+        <Person name="Samim Hasan" address = "Dhaka"></Person>
+        <Person name="Hasif Khan" address = "Feni"></Person> */}
+        <Person name={personName[0]}address = "Chittagong"></Person>
+        <Person name={personName[1]} address = "Dhaka"></Person>
+        <Person name={personName[2]}  address = "Feni"></Person>
       </header>
     </div>
   );
 }
 
-function Person() {
+function Person(props) {
   const style = {
     marginTop: "-5px",
     marginBottom: "25px",
@@ -54,8 +58,9 @@ function Person() {
   };
   return (
     <div style={style}>
-      <h4>Name: Sakib Al Hasan</h4>
-      <h3>Hero of the year</h3>
+      <h3>Name: {props.name}</h3>
+      <h3>Name: {props.address}</h3>
+      <h4>Hero of {props.address} city</h4>
     </div>
   );
 }
