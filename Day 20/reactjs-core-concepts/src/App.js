@@ -107,7 +107,10 @@ function App() {
 
 function Counter(props) {
   const [count, setCount] = useState(10);
-  const handleIncrease = () => console.log('clicked');
+  const handleIncrease = () => {
+    const newCount = count +1;
+    setCount(newCount);
+  };
   return (
     <div>
       <h1> Count: {count}</h1>
