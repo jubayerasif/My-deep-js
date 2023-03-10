@@ -73,7 +73,7 @@
 
 ///////////////////Part 2
 
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import logo from "./logo.svg";
 import "./App.css";
 
@@ -88,7 +88,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <Counter></Counter>
-
+        <Users></Users>
         {/* <Product name={products[0].name} price={products[0].price}></Product>
         <Product name={products[1].name} price={products[1].price}></Product>
         <Product name={products[2].name} price={products[2].price}></Product> */}
@@ -125,6 +125,25 @@ function Counter(props) {
       <button onMouseMove={handleDecrease} style={style}>Decrease</button>
     </div>
   );
+}
+
+function Users(props){
+  const [users, setUsers] = useState([]);
+  useEffect(() => {
+    fetch('https://jsonplaceholder.typicode.com/users')
+      .then(res => res.json())
+      .then(data => setUsers(data))
+  }, [])
+  return(
+    <div>
+      <h3>Dynamic Users: {users.length}</h3>
+      <ol>
+        {
+          users.map(user => <li>{user.name}</li>)
+        }
+      </ol>
+    </div>
+  )
 }
 
 function Product(props) {
