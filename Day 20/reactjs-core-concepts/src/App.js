@@ -108,13 +108,21 @@ function App() {
 function Counter(props) {
   const [count, setCount] = useState(10);
   const handleIncrease = () => {
-    const newCount = count +1;
-    setCount(newCount);
+    setCount(count +1);
   };
+  const handleDecrease = () => {
+    setCount(count - 1);
+  };
+  const style = {
+    margin: '5px'
+  }
   return (
     <div>
       <h1> Count: {count}</h1>
-      <button onClick={handleIncrease}>Increase</button>
+      <button onClick={handleIncrease} style={style}>Increase</button>
+      <button onMouseMove={handleIncrease} style={style}>Massive Increase</button>
+      <button onClick={handleDecrease} style={style}>Decrease</button>
+      <button onMouseMove={handleDecrease} style={style}>Decrease</button>
     </div>
   );
 }
